@@ -14,7 +14,7 @@ In the overview introduction, we explored some flashes in JavaScript history. He
 - How DOM represents?
 - Interact with JavaScript & DOM
 
-** --- **
+---
 
 ## Coding Examples
 
@@ -37,7 +37,7 @@ In the overview introduction, we explored some flashes in JavaScript history. He
 
 ```
 
-** --- **
+---
 
 ## Coding Exercises
 
@@ -71,7 +71,7 @@ In the overview introduction, we explored some flashes in JavaScript history. He
     document.querySelector('h2').textContent += " and love";
 ```
 
-** --- **
+---
 
 ### Exercise from freecodecamp.org
 
@@ -101,3 +101,7 @@ In the overview introduction, we explored some flashes in JavaScript history. He
 ```javascript
     console.log(`${dog.name}\n${dog.numLegs}`);
 ```
+
+### Sources to review
+- [MDN] (https://developer.mozilla.org/)
+- [Free code camp] (https://www.freecodecamp.org/)
