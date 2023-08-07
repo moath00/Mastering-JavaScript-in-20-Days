@@ -103,5 +103,5 @@ In the overview introduction, we explored some flashes in JavaScript history. He
 ```
 
 ### Sources to review
-#### [MDN](https://developer.mozilla.org/)
-#### [FreeCodeCamp] (https://www.freecodecamp.org/)
+- #### [MDN](https://developer.mozilla.org/)
+- #### [Free code camp](https://www.freecodecamp.org/)
