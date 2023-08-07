@@ -16,9 +16,9 @@ In the overview introduction, we explored some flashes in JavaScript history. He
 
 ---
 
-## Coding Examples
+## Coding Examples :checkered_flag:
 
-### Snippet of selectors applied with JavaScript
+### Snippet of selectors applied with JavaScript :
 ```javascript
     1. console.log("Hi, it's console!!");           // print on console
     2. document.getElementById('id');               // return element that matches the id selector
@@ -29,7 +29,7 @@ In the overview introduction, we explored some flashes in JavaScript history. He
     7. document.getElementsByName('code');          // return all elements that match the attribute name provided as HTMLCollection
 ```
 
-### Snippet of DOM modifications
+### Snippet of DOM modifications :
 ```javascript
     document.title = "My NEW Title";
     document.getElementById('player').textContent = "Rob";
@@ -39,7 +39,7 @@ In the overview introduction, we explored some flashes in JavaScript history. He
 
 ---
 
-## Coding Exercises
+## Coding Exercises :anchor:
 
 ### exercises from the course
 
@@ -102,6 +102,7 @@ In the overview introduction, we explored some flashes in JavaScript history. He
     console.log(`${dog.name}\n${dog.numLegs}`);
 ```
 
+---
 
 ### Sources to review
 - #### [MDN](https://developer.mozilla.org/)
