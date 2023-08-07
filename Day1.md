@@ -16,7 +16,7 @@ In the overview introduction, we explored some flashes in JavaScript history. He
 
 ---
 
-## Coding Examples :checkered_flag:
+## Coding Examples :woman_teacher:
 
 ### Snippet of selectors applied with JavaScript :
 ```javascript
@@ -39,7 +39,7 @@ In the overview introduction, we explored some flashes in JavaScript history. He
 
 ---
 
-## Coding Exercises :anchor:
+## Coding Exercises :man_technologist:
 
 ### exercises from the course
 
