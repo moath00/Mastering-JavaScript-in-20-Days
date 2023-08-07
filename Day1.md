@@ -102,6 +102,7 @@ In the overview introduction, we explored some flashes in JavaScript history. He
     console.log(`${dog.name}\n${dog.numLegs}`);
 ```
 
-**### Sources to review**
+
+### Sources to review
 - #### [MDN](https://developer.mozilla.org/)
 - #### [Free code camp](https://www.freecodecamp.org/)
