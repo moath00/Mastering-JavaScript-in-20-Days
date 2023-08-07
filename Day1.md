@@ -1,5 +1,5 @@
 
-** # Day 1: Introduction & DOM **
+#  ** Day 1: Introduction & DOM **
 
 This README file summarizes the JavaScript introduction lessons. This section of the sprint view the DOM representation and how can I use it to interact with it using JavaScript functions with CSS selector expressions in console and modify the DOM viewed. The DOM edits I made in the current page will be lost if I reload the page, that is because this edits is on my side and the source code in the link I requested is not modified.
 
