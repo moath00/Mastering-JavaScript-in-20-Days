@@ -1,18 +1,47 @@
 
-# Day 1: Introduction & DOM
+# Day 1: Values & Data Types - Operators - Expressions
 
-This README file summarizes the JavaScript introduction lessons. This section of the sprint view the DOM representation and how can I use it to interact with it using JavaScript functions with CSS selector expressions in console and modify the DOM viewed. The DOM edits I made in the current page will be lost if I reload the page, that is because this edits is on my side and the source code in the link I requested is not modified.
+### Values and Data Types :
+
+This README file summarizes the JavaScript data types lessons. This section of the sprint view the various types of data used in JavaScript and what values accepted such as strings, integers, arrays ...etc. JavaScript has primitives and objects. Then here is the deferent between undefined and null, undefined means nothing but mistake happened (like I want something and it's not exist) and null means nothing but I want it to be nothing (like I want something and it's exist nothing).
+
+Let's talk about string, first it's a group of character, then it's represented by 0 indexed representation. I can interact with string with square practice [] and other functions like indexOf() [^1], includes() [^2], toLowerCase() and more functions.
+
+[^1]: indexOf() returns the index of the first character found in the string and its case-sensitive and return -1 if not found the character or substrings.
+[^2]: includes() returns boolean true if the substring exists in the string and its case-sensitive.
+
+### Operators :
+
+("+" for contaminate and typeof: considered operator)
+mathematical operators : { +, -, *, / } with order of () then { * and / } then { + and  - }, { ++, -- } are increment and decrement operators.
+comparison operators : { >, <, >=, <= } they are widely used in condition statements.
+equals operators : { ==, !=, ===, !== }, double equality is for comparing the values and triple comparing values and types.
+logical operators : { ||, &&, ??, ^, |, &, <<, >>> } operators that make binary operations.
+
+### Expressions :
+
+An expression is a block of code that evaluates to a value. A statement is any block of code that is performing some action.
+The distinction between an expression and a statement is important because an expression is a subset of a statement. You can use an expression wherever a statement is expected, but this does not work vice versa.
+The let keyword declaring the variable like : let message = "Hello, world!"; and if I didn't use = (that means I didn't assign the variable) and it's value is undefined.
+The const keyword declaring the variable like : const myName = "Moath"; and will remember the value forever :skull:.
+The variable is pointer or reference, it is contained the position of the variable in the memory.
+The valid variables names are allow to use camel-case, kebab-case and more but not allow to use number at the beginning and some special characters like => !
+The expression is to ask JavaScript about something, the statement is to ask JavaScript to do something.
+Expressions example : 10 + 1 * 2, statements example : let sum = 10 + 1 * 2 .
 
 ## Checkpoint Summary :vertical_traffic_light:
 
-In the overview introduction, we explored some flashes in JavaScript history. Here are the key points covered:
+Here are the key points covered:
 
-- Snippets from JavaScript history.
-- What is the JavaScript?
-- What we can do with JavaScript?
-- Where is JavaScript runs.
-- How DOM represents?
-- Interact with JavaScript & DOM
+- What is data types and its values?
+- What is the JavaScript kinds of data?
+- What is the deferent between Undefined and NULL JavaScript?
+- What is the String? How to work with String?
+- What is operators? What they do? What are the operator types?
+-  What is the variables?
+- Declaring a variable.
+- How to declaring and assigning forever?
+- What is the deferent between statement and expression?
 
 ---
 
@@ -20,21 +49,46 @@ In the overview introduction, we explored some flashes in JavaScript history. He
 
 ### Snippet of selectors applied with JavaScript :
 ```javascript
-    1. console.log("Hi, it's console!!");           // print on console
-    2. document.getElementById('id');               // return element that matches the id selector
-    3. document.querySelector('anySelector');       // return first element that matches any selector provided
-    4. document.querySelectorAll('anySelector');    // return all elements that match any selector provided as NodeList
-    5. document.getElementsByTagName('tag');        // return all elements that match the tag name provided as HTMLCollection
-    6. document.getElementsByClassName('class');    // return all elements that has the class name provided as HTMLCollection
-    7. document.getElementsByName('code');          // return all elements that match the attribute name provided as HTMLCollection
+    // Which data type is each of these values?
+    typeof false                    // boolean
+    typeof "true"                   // string
+    typeof document.title           // string
+    typeof "some string".length     // number
+    typeof null                     // object
 ```
 
 ### Snippet of DOM modifications :
-```javascript
-    document.title = "My NEW Title";
-    document.getElementById('player').textContent = "Rob";
-    document.getElementById('player').append(' & Mosh');
 
+```javascript
+    // Add your last name in the players listing
+    document.getElementById("firstPlayer").textContent.append(" Hjjawi");
+    document.getElementById("secondPlayer").textContent += " Hjjawi";
+    // Retrieve the first "T" in the page title
+    document.title[document.title.indexOf("T")];
+    // Answer whether the page title contains the string "JavaScript"
+    document.title.includes("JavaScript");
+    // Capitalize the heading "Tic Tac Toe"
+    document.getElementsByTagName("h1").textContent = document.getElementsByTagName("h1").textContent.toUpperCase();
+```
+
+```javascript
+    // Use arithmetic operators to compute:
+    // The total number of siblings of parents
+    console.log(5+4);
+    // The average number of hours you been slept this week
+    console.log((4.5+6+6+7+6+7.5+6) / 7);
+    // The number of dogs you'd pet in a week if you pet 1 dog pet hour while awake
+    console.log((4.5+6+6+7+6+7.5+6) - 24 * 7 * 1);
+```
+
+```javascript
+    // Declare & assign variables to remember :
+    // Your name
+    const myName = "Moath Hjjawi";
+    // The combined age of your parents
+    let combinedMyParentsAge = 40 + 35;
+    // The #board element on the page
+    let board = document.querySelector("#board");
 ```
 
 ---
@@ -83,23 +137,6 @@ In the overview introduction, we explored some flashes in JavaScript history. He
     a *= 5;
     b *= 3;
     c *= 10;
-```
-
-### [Several line string concatenation](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/concatenating-strings-with-the-plus-equals-operator)
-
-### My Solution
-
-```javascript
-    let myStr = "This is the first sentence.";
-    myStr += " This is the second sentence.";
-```
-
-### [Use Dot Notation to Access the Properties of an Object](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/object-oriented-programming/use-dot-notation-to-access-the-properties-of-an-object)
-
-### My Solution
-
-```javascript
-    console.log(`${dog.name}\n${dog.numLegs}`);
 ```
 
 ---
