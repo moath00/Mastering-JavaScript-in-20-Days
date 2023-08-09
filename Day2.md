@@ -45,9 +45,9 @@ Here are the key points covered:
 
 ---
 
-## Coding Examples :woman_teacher:
+## Coding Exercises from the course :man_technologist: 
 
-### Snippet of selectors applied with JavaScript :
+### Snippet of types of JavaScript :
 ```javascript
     // Which data type is each of these values?
     typeof false                    // boolean
@@ -57,7 +57,7 @@ Here are the key points covered:
     typeof null                     // object
 ```
 
-### Snippet of DOM modifications :
+### Snippet of DOM exercises :
 
 ```javascript
     // Add your last name in the players listing
@@ -71,6 +71,8 @@ Here are the key points covered:
     document.getElementsByTagName("h1").textContent = document.getElementsByTagName("h1").textContent.toUpperCase();
 ```
 
+### Snippet of operators exercises :
+
 ```javascript
     // Use arithmetic operators to compute:
     // The total number of siblings of parents
@@ -81,6 +83,8 @@ Here are the key points covered:
     console.log((4.5+6+6+7+6+7.5+6) - 24 * 7 * 1);
 ```
 
+### Snippet of variables exercises :
+
 ```javascript
     // Declare & assign variables to remember :
     // Your name
@@ -90,41 +94,6 @@ Here are the key points covered:
     // The #board element on the page
     let board = document.querySelector("#board");
 ```
-
----
-
-## Coding Exercises :man_technologist:
-
-### exercises from the course
-
-```javascript
-    // Type commands to retrieve:
-    // 1. all the p elements
-    document.getElementsByTagName('p');
-
-    // 2. the text X
-    document.getElementById('p1-symbol').textContent;
-
-    // 3. the number of squares in the board
-    document.querySelectorAll('.square').length;
-
-    // 4. the number of "A game you know"
-    document.querySelector('h2').textContent;
-```
-
-```javascript
-    // 1. Change the player names to you & neighbor
-    document.querySelector('#p1').textContent = 'Moath';
-    document.querySelector('#p2').textContent = 'Ayman';
-
-    // 2. Swap the player symbols
-    document.querySelector('#p1-symbol').textContent = 'O';
-    document.querySelector('#p1-symbol').textContent = 'X';
-
-    // 3. Change subtitle to "A game you know and love"
-    document.querySelector('h2').textContent += " and love";
-```
-
 
 ---
 
