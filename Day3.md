@@ -125,6 +125,19 @@ Here are the key points covered:
     document.querySelector('h2').textContent += " and love";
 ```
 
+---
+
+### Exercise from freecodecamp.org
+
+### [The *= operator multiplier](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/compound-assignment-with-augmented-multiplication)
+
+#### My Solution
+
+```javascript
+    a *= 5;
+    b *= 3;
+    c *= 10;
+```
 
 ---
 
