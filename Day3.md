@@ -1,47 +1,23 @@
 
-# Day 1: Values & Data Types - Operators - Expressions
+# Day 1: Arrays - Objects
 
-### Values and Data Types :
+### Arrays :
 
-This README file summarizes the JavaScript data types lessons. This section of the sprint view the various types of data used in JavaScript and what values accepted such as strings, integers, arrays ...etc. JavaScript has primitives and objects. Then here is the deferent between undefined and null, undefined means nothing but mistake happened (like I want something and it's not exist) and null means nothing but I want it to be nothing (like I want something and it's exist nothing).
+Arrays let us keep multiple values together in a single collection. We can use length to count elements in array, we can reach each element individually by using the [] with index[^1]. We can also use functions with array like include, pop (returns the element popped), push (returns the new length after push) and more. Arrays can have multiple data with different types.
+Mutable is a data type that can be edited (eg. array). Immutable is a data type that can't be edited (eg. strings and other primitives). If we use concat function with array, it will create a new array with new values concated together. The push function manipulates "mutate" the array while concat function not manipulates the array. The const immutable and the let mutable. The array itself is immutable and the data in it are mutable.
+> Always use const (i.e immutable) unless you have a reason to use let (mutable).
+[^1]: arrays are zero indexed.
 
-Let's talk about string, first it's a group of character, then it's represented by 0 indexed representation. I can interact with string with square practice [] and other functions like indexOf() [^1], includes() [^2], toLowerCase() and more functions.
+### Objects :
 
-[^1]: indexOf() returns the index of the first character found in the string and its case-sensitive and return -1 if not found the character or substrings.
-[^2]: includes() returns boolean true if the substring exists in the string and its case-sensitive.
-
-### Operators :
-
-("+" for contaminate and typeof: considered operator)
-mathematical operators : { +, -, *, / } with order of () then { * and / } then { + and  - }, { ++, -- } are increment and decrement operators.
-comparison operators : { >, <, >=, <= } they are widely used in condition statements.
-equals operators : { ==, !=, ===, !== }, double equality is for comparing the values and triple comparing values and types.
-logical operators : { ||, &&, ??, ^, |, &, <<, >>> } operators that make binary operations.
-
-### Expressions :
-
-An expression is a block of code that evaluates to a value. A statement is any block of code that is performing some action.
-The distinction between an expression and a statement is important because an expression is a subset of a statement. You can use an expression wherever a statement is expected, but this does not work vice versa.
-The let keyword declaring the variable like : let message = "Hello, world!"; and if I didn't use = (that means I didn't assign the variable) and it's value is undefined.
-The const keyword declaring the variable like : const myName = "Moath"; and will remember the value forever :skull:.
-The variable is pointer or reference, it is contained the position of the variable in the memory.
-The valid variables names are allow to use camel-case, kebab-case and more but not allow to use number at the beginning and some special characters like => !
-The expression is to ask JavaScript about something, the statement is to ask JavaScript to do something.
-Expressions example : 10 + 1 * 2, statements example : let sum = 10 + 1 * 2 .
 
 ## Checkpoint Summary :vertical_traffic_light:
 
 Here are the key points covered:
 
-- What is data types and its values?
-- What is the JavaScript kinds of data?
-- What is the deferent between Undefined and NULL JavaScript?
-- What is the String? How to work with String?
-- What is operators? What they do? What are the operator types?
--  What is the variables?
-- Declaring a variable.
-- How to declaring and assigning forever?
-- What is the deferent between statement and expression?
+- What is the Array?
+- Mutable vs Immutable.
+- Which data types are mutable? and Which immutable?
 
 ---
 
@@ -49,12 +25,10 @@ Here are the key points covered:
 
 ### Snippet of selectors applied with JavaScript :
 ```javascript
-    // Which data type is each of these values?
-    typeof false                    // boolean
-    typeof "true"                   // string
-    typeof document.title           // string
-    typeof "some string".length     // number
-    typeof null                     // object
+    // What do you think each of these does? (Try it!)
+    ["c", "a", "d", "b"].sort();                        // [ "a", "b", "c", "d" ]
+    ["lions", "tigers", "bears oh my!"].join(" & ");    // "lions & tigers & bears oh my!"
+    [1, 2, 3].concat([4, 5, 6]);                        // [ 1, 2, 3, 4, 5, 6 ]
 ```
 
 ### Snippet of DOM modifications :
