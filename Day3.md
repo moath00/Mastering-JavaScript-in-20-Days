@@ -120,6 +120,8 @@ Here are the key points covered:
 
 ### [Reusable Function](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/write-reusable-javascript-with-functions)
 
+#### My Solution
+
 ```javascript
     const reusableFunction= () => {
         console.log("Hi World");
@@ -130,6 +132,8 @@ Here are the key points covered:
 
 ### [Function without returned value](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/understanding-undefined-value-returned-from-a-function)
 
+#### My Solution
+
 ```javascript
     const addFive = () => {
         sum += 5;
@@ -138,6 +142,8 @@ Here are the key points covered:
 ```
 
 ### [Function with returned value](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/return-a-value-from-a-function-with-return)
+
+#### My Solution
 
 ```javascript
     const timesFive = (number) => {
