@@ -5,9 +5,9 @@
 
 Functions consists of three parts, name - parameters - return value - doing statements. In JavaScript contains : values => things, variables => point to things, functions => doing things. In JavaScript we can declare(create) functions and call(use) them. We named the functions parameters like the variables.
 1 + undefined = Nan and tpypeof NaN is "number" :). If I pass a parameters to the function doesn't have parameters then JavaScript doesn't carte and doing what it usually does (in general if passed less than wanted). If the function doesn't finish his work we don't have to put return before the function finishes his work. We can declare functions in deferent ways, we can use function key word (anonymous), we can declare variable pointed to a function or using arrow function type.
-> Scope determines where variables are "in play".
 In JavaScript we have multiple scopes; global scope, function scope, lexical scope and block scope.
 EventListeners are used to listen for events that user do and handle it. We use addEventListener() to add listeners. The events can be like : "click", "mouseover", "mouseout" and more, these are the first parameter for event listener and the second is the action (function), so we use addEventListener handle the events happening and we van use multiple listeners to the same element.
+> Scope determines where variables are "in play".
 
 ## Checkpoint Summary :vertical_traffic_light:
 
