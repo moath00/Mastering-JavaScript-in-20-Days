@@ -156,7 +156,7 @@ Here are the key points covered:
 
 ### Quiz project
 
-[Day3QuizProject](./Day3QuizProject/Quiz.js.html)
+[Day3QuizProject](./QuizProject/Quiz.html)
 
 ### Sources to review
 - #### [MDN](https://developer.mozilla.org/)
