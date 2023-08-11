@@ -120,7 +120,7 @@ Here are the key points covered:
 
 ### Quiz project
 
-[Day3QuizProject](./Day3QuizProject/Quiz.js.html)
+[Day4QuizProject](./Day3QuizProject/Quiz.js.html)
 
 ### Sources to review
 - #### [MDN](https://developer.mozilla.org/)
