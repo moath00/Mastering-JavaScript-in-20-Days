@@ -54,8 +54,8 @@
   </head>
   <body>
     <header>
-    <h1>Quiz.js</h1>
-    <p>Do you know JS? Find out!</p>
+        <h1>Quiz.js</h1>
+        <p>Do you know JS? Find out!</p>
     </header>
 
     <main>
@@ -107,11 +107,15 @@
     // disable(button) should set the button element's attribute "disabled" to the value ""
     // enable(button) should remove the attribute "disabled" from the button element
 
+    const disableBtn = (button) => button.setAttribute("disabled", true);
+    const enableBtn = (button) => button.removeAttribute("disabled");
 
 
     // TODO 5: Declare an isCorrect function that compares a guess to the right answer
     // isCorrect(guess) should return true if the guess matches the fact's answer
     
+    
+    const isCorrect = (guess) => guess === fact.answer;
 
 
     // TODO 6A: Use a for loop to add a click event listener to each of the optionButtons
@@ -128,6 +132,18 @@
             // and add the "correct"/"incorrect" class as appropriate
 
     
+            // Exercises
+    // In the console, on our quiz add event listeners to:
+    // Capitalize the text of the "true" button when it is clicked
+    const trueBtn = document.querySelector("#options button");
+    trueBtn.addEventListener("click", (event) => trueBtn.textContent = trueBtn.textContent.toUpperCase());
+    
+    // Change the h1 text to "hovering" when the mouse moves into the element
+    const headerElement = document.querySelector("header h1");
+    headerElement.addEventListener("mouseover", (event) => headerElement.textContent = "hovering");
+
+    // Change the h1 text to "Quiz.js" when the mouse moves out of the element
+    headerElement.addEventListener("mouseout", (event) => headerElement.textContent = "Quiz.js")
 
   </script>
 

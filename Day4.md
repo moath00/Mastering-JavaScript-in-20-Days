@@ -1,32 +1,25 @@
 
-# Day 1: Arrays - Objects
+# Day 1: Quiz Project Functions - Events & Handlers
 
-### Arrays :
+### Quiz Project Functions:
 
-Arrays let us keep multiple values together in a single collection. We can use length to count elements in array, we can reach each element individually by using the [] with index[^1]. We can also use functions with array like include, pop (returns the element popped), push (returns the new length after push) and more. Arrays can have multiple data with different types.
-Mutable is a data type that can be edited (eg. array). Immutable is a data type that can't be edited (eg. strings and other primitives). If we use concat function with array, it will create a new array with new values concated together. The push function manipulates "mutate" the array while concat function not manipulates the array. The const immutable and the let mutable. The array itself is immutable and the data in it are mutable.
-[^1]: arrays are zero indexed.
-> Always use const (i.e immutable) unless you have a reason to use let (mutable).
-
-### Objects :
-
-Objects collect multiple values together to describe more complex data. We can access the data using dot notation and we can use the object properties, so we can consider the objects as mutable data types. We can also called arrays as objects because it's went through being object under the hood and its type using typeof give object, I can also use (object.freeze()) to make it immutable[^2].
-[^2]: search in MDN for more. Object can contain multiple properties also can contain values, objects or functions that in this case will call object methods.
-There are several built-in objects and functions like document object and its methods, arrays and its methods, console and its methods, Math object and its methods and more. How about strings? It's immutable but have functions seems like manipulate the string but it's not, it's returned new string, that is because JavaScript automatically wrap it to String Object.
-
-> This how comments looks like in JS : // comment :)
+Functions consists of three parts, name - parameters - return value - doing statements. In JavaScript contains : values => things, variables => point to things, functions => doing things. In JavaScript we can declare(create) functions and call(use) them. We named the functions parameters like the variables.
+1 + undefined = Nan and tpypeof NaN is "number" :). If I pass a parameters to the function doesn't have parameters then JavaScript doesn't carte and doing what it usually does (in general if passed less than wanted). If the function doesn't finish his work we don't have to put return before the function finishes his work. We can declare functions in deferent ways, we can use function key word (anonymous), we can declare variable pointed to a function or using arrow function type.
+> Scope determines where variables are "in play".
+In JavaScript we have multiple scopes; global scope, function scope, lexical scope and block scope.
+EventListeners are used to listen for events that user do and handle it. We use addEventListener() to add listeners. The events can be like : "click", "mouseover", "mouseout" and more, these are the first parameter for event listener and the second is the action (function), so we use addEventListener handle the events happening and we van use multiple listeners to the same element.
 
 ## Checkpoint Summary :vertical_traffic_light:
 
 Here are the key points covered:
 
-- What is the Array?
-- Mutable vs Immutable.
-- Which data types are mutable? and Which immutable?
-- What is the Object?
-- How to interact with Objects?
-- learn some built-in Objects.
-- How to write a comment in JavaScript?
+- What is the Function?
+- What is the types of Functions?
+- Unusual things happen in JavaScript.
+- Where we put the Function returned value?
+- How can we declare a Function?
+- What is scope in JavaScript? And what is block scope in JavaScript (let vs var)?
+- How to interact with webpage? What is EventListener?
 
 ---
 
@@ -35,121 +28,92 @@ Here are the key points covered:
 ### exercises from the course
 
 ```javascript
-    // Create an object representing you!
-    const me = {
-        name : "Moath",
-        home : "Tulkarm",
-        languages : [ "Arabic", "English" ],
-        status : "Single Happy Young",
-        education : "Bachelor",
-        vehicle : null,
-        hobbies : [ "Coding", "Reading", "Traveling" ]
-    }
+    // In the console, declare the following functions:
+    // multiply: given two numbers, return their product
+    const multiply = (x, y) => x * y;
+    multiply(3,4);
+    // yell: given a lowercase string, log it in all caps to the console
+    const log = (string) => console.log(string.toLowerCase());
+    // longerThan: given 2 arrays, log whether the first is longer than second
+    const longerThan = (array1, array2) => array1.length > array2.length;
 ```
 
 ```javascript
-    const spices = [
-        { name: "Emma", nickname: "Baby" },
-        { name: "Geri", nickname: "Ginger" },
-        { name: "Mel B", nickname: "Scary" },
-        { name: "Mel C", nickname: "Sporty" },
-        { name: "Victoria", nickname: "Posh" }
-    ]
+    // In the console, declare the following functions using arrow functions:
+    // divide: given 2 numbers, return the first divided by the second
+    const divide = (first, second) => first / second;
+    // whisper: given an uppercase string, log it in all lowercase to the console
+    const whisper = (string) => console.log(string.toLoweCase());
+    // shorterThan: given 2 arrays, return whether the first is shorter than the second
+    const shorterThan = (array1, array2) => array1.length < array2.length;
+```
 
-    const spiceGirls = {
-        albums : [ "Spice", "Spiceworld", "Forever" ],
-        motto : "Girl Power",
-        members : spices
-    }
+```javascript
+    // In the console, on our quiz add event listeners to:
+    // Capitalize the text of the "true" button when it is clicked
+    const trueBtn = document.querySelector("#options button");
+    trueBtn.addEventListener("click", (event) => trueBtn.textContent = trueBtn.textContent.toUpperCase());
 
-    // From the spiceGirls object, how can we retrieve:
-    // "Girl Power"
-    let motto = spiceGirls.motto;
-    // The object representing Ginger Spice
-    let ginger = spiceGirls.members[1];
-    // "Spiceworld"
-    let spiceAlbum = spiceGirls.album[1];
-    // "Victoria"
-    let victoria = spiceGirls.members[4].name;
+    // Change the h1 text to "hovering" when the mouse moves into the element
+    const headerElement = document.querySelector("header h1");
+    headerElement.addEventListener("mouseover", (event) => trueBtn.textContent = "hovering");
+
+    // Change the h1 text to "Quiz.js" when the mouse moves out of the element
+    headerElement.addEventListener("mouseout", (event) => trueBtn.textContent = "Quiz.js")
 ```
 
 ---
 
 ### Exercise from freecodecamp.org
 
-### [The slice function](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-data-structures/copy-array-items-using-slice)
+### [Global Scope and Functions](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/global-scope-and-functions)
 
 #### My Solution
 
 ```javascript
-    function forecast(arr) {
-        arr = arr.slice(2,4);
-        return arr;
+    const myGlobal = 10;
+
+    function fun1() {
+        oopsGlobal = myGlobal/2;
     }
 ```
 
-### [The spread operator ...](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-data-structures/combine-arrays-with-the-spread-operator)
+### [Local Scope and Functions](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/local-scope-and-functions)
 
 #### My Solution
 
 ```javascript
-    function spreadOut() {
-        let fragment = ['to', 'code'];
-        const sentence = [ 'learning', ...fragment, 'is', 'fun' ];
-        return sentence;
+    function myLocalScope() {
+        const myVar = "test";
+        console.log('inside myLocalScope', myVar); // "test"
     }
+    myLocalScope();
+    console.log('outside myLocalScope', myVar); // undefined
 ```
 
-### [Profile lookup - Object](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/profile-lookup)
+### [Global Scope vs Local  Scope](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/global-vs--local-scope-in-functions)
 
 #### My Solution
 
 ```javascript
-    function lookUpProfile(name, prop) {
-        // Only change code below this line
-        for ( let i = 0; i < contacts.length; i++)
-            if ( name === contacts[i].firstName) {
-                if ( contacts[i][prop] !== undefined )
-                    return contacts[i][prop];
-                return "No such property";
-            }
-        return "No such contact";
-        // Only change code above this line
+    const outerWear = "T-Shirt";
+    function myOutfit() {
+        let outerWear = "sweater";
+        return outerWear;
     }
+    myOutfit();
 ```
 
-### [Reusable Function](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/write-reusable-javascript-with-functions)
+### [Queue - Stand in Line](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/stand-in-line)
 
 #### My Solution
 
 ```javascript
-    const reusableFunction= () => {
-        console.log("Hi World");
-    };
-
-    reusableFunction();
-```
-
-### [Function without returned value](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/understanding-undefined-value-returned-from-a-function)
-
-#### My Solution
-
-```javascript
-    const addFive = () => {
-        sum += 5;
-    };
-    addFive();
-```
-
-### [Function with returned value](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/return-a-value-from-a-function-with-return)
-
-#### My Solution
-
-```javascript
-    const timesFive = (number) => {
-        return number *= 5;
+    function nextInLine(arr, item) {
+        arr.push(item);
+        return arr.shift();
     }
-    timesFive();
+    console.log(nextInLine([1,2.3,4,5], 6));
 ```
 
 ---
