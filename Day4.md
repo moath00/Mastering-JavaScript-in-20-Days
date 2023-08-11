@@ -1,5 +1,5 @@
 
-# Day 1: Quiz Project Functions - Events & Handlers
+# Day 4: Quiz Project Functions - Events & Handlers
 
 ### Quiz Project Functions:
 

@@ -1,5 +1,5 @@
 
-# Day 1: Arrays - Objects
+# Day 3: Arrays - Objects
 
 ### Arrays :
 

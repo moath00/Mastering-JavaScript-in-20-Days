@@ -1,5 +1,5 @@
 
-# Day 1: Values & Data Types - Operators - Expressions
+# Day 2: Values & Data Types - Operators - Expressions
 
 ### Values and Data Types :
 
