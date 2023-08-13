@@ -1,0 +1,52 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    font-weight: 700;
+}
+
+body {
+    background-image: url(https://wallpaperaccess.com/full/401128.png);
+    background-size: cover;
+    background-position: center center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.title {
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    margin: 40px;
+}
+
+#characterList {
+    display: flex;
+    flex-flow: row-reverse;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 20px;
+}
+
+#characterList > li > div {
+    width: calc(100% / 3);
+}
+
+.ramImgs {
+    border-radius: 20%;
+    border: 2px solid #44f;
+    text-align: center;
+    width: 120rm;
+    height: 120rm;
+}
+
+#characterList > li ul {
+    margin-top: 10px;
+    list-style:inside;
+}
+
+#characterList > li ul > li {
+    padding-left: 30px;
+    padding-top: 5px;
+}
