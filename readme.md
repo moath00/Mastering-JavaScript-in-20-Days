@@ -37,3 +37,4 @@ In this challenge, you will enhance your JavaScript skills and knowledge. Each d
 -  [**Day 3**](https://github.com/moath00/Mastering-JavaScript-in-20-Days/blob/main/Day3.md)
 -  [**Day 4**](https://github.com/moath00/Mastering-JavaScript-in-20-Days/blob/main/Day4.md)
 -  [**Day 5**](https://github.com/moath00/Mastering-JavaScript-in-20-Days/blob/main/Day5.md)
+-  [**Day 6**](https://github.com/moath00/Mastering-JavaScript-in-20-Days/blob/main/Day6.md)
