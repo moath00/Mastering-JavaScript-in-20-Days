@@ -20,13 +20,16 @@ Closure gives our functions persistent memories and entirely new toolkit for wri
 - Helper functions: Everyday professional helper functions like ‘once’ and ‘memoize’.
 - Iterators and generators: Which use lexical scoping and closure to achieve the most contemporary patterns for handling data in JavaScript.
 - Module pattern: Preserve state for the life of an application without polluting the global namespace.
-- Asynchronous JavaScript: Callbacks and Promises rely on closure to persist state in an asynchronous environment.
+- Asynchronous JavaScript: Callbacks and Promises rely on closure to persist state in an asynchronous environment. This called a Single Thread of Execution.
 
 ![Backpack Memory](./visualData/backpackMemory.png)
 
 ### Asynchronous JavaScript:
 
-
+JavaScript is asynchronous language, it executes code line by line, doesn't execute next line before finishing the current line. I javascript we have setTimeout(function, timeInMilliseconds) used to execute function or code after delay in synchronous way. Our core JavaScript engine has 3 main parts:
+- Thread of execution
+- Memory/variable environment
+- Call stack
 
 ## Checkpoint Summary :vertical_traffic_light:
 
@@ -37,6 +40,7 @@ The key points covered:
 - What is the Backpack? What is the various names?
 - What is the scope?
 - Benefits of Closure.
+- What Asynchronous means?
 
 ---
 
