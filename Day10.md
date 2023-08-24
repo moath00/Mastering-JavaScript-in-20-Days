@@ -42,20 +42,9 @@ The key points covered:
 ---
 
 ### Question 1:
-Write a closure named createCounter that takes an initial value start and returns a function. The returned function, when invoked, should increment the counter by 1 and return the updated value.
 
 ```javascript
-    const createCounter = (start) => {
-        const increase = () => {
-            // console.log("Value before: " + start);
-            start ++;
-            // console.log("Value after: " + start);
-        }
-        return increase;
-    }
-    const counter = createCounter(3);
-    counter();
-    counter();
+    
 ```
 
 ---
