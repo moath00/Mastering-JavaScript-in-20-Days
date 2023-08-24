@@ -1,5 +1,5 @@
 
-# Day 9: Classes and Prototypes - Wrapping up:
+# Day 10: Classes and Prototypes - Wrapping up:
 
 ### Classes and Prototypes:
 
