@@ -1,5 +1,5 @@
 
-# Day 11: Philosophy of Coercion - Equality - Static Typing:
+# Day 12: Philosophy of Coercion - Equality - Static Typing:
 
 ### Philosophy of Coercion:
 
