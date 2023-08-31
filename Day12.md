@@ -53,7 +53,14 @@ Caveats:
 
 The key points covered:
 
-- 
+- Code comments should explain "why," not "how."
+- What is the impact of implicit functionality in code?
+- How do double equal (==) and triple equal (===) differ in handling types?
+- Use == when types are clear.
+- Double equal (==) compares null and undefined as true.
+- TypeScript and others catch type-related mistakes.
+- Coding style should make types obvious.
+- Why is it important to embrace and learn JavaScript's type system?
 
 ---
 

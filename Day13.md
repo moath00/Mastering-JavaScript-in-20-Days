@@ -20,7 +20,13 @@ Function expression is when the function was in the right hand side of statement
 
 The key points covered:
 
-- 
+- Four stages of compilation in compiler theory.
+- How does JavaScript organize scopes?
+- Shadowing and its relationship with lexical scope.
+- Right Hand Side and Left Hand Side.
+- The role of "use strict".
+- The distinction between "undefined" and "undeclared" variables.
+- Two types of function expressions: anonymous and named.
 
 ---
 
