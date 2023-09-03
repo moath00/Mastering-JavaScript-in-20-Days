@@ -3,11 +3,11 @@
 
 ### Conditionals:
 
-Conditions are something or statement let us to execute some code if the condition happens. Conditionals are if statements, if else statements and if else if statements. Here we need to say about "truthiness" in values, for example "strings" are true if I put in condition and same 0 is falsy value, [] is truthy, "" is falsy, null and undefined are falsy... etc. As mentioned before logical operators like &&, || and there is ternary operator => condition ? (do this if true) : (do this if false) . Loops are letting us  to execute line(s) of code multiple times as we want. Loops examples: for (start,condition,++ or --) { ... }, if (item of iterableItems) { ... }.
+Conditions are something or statement let us to execute some code if the condition happens. Conditionals are if statements, if else statements and if else if statements. Here we need to say about "truthiness" in values, for example "strings" are true if I put in condition and same 0 is falsy value, [] is truthy, "" is falsy, null and undefined are falsy... etc. As mentioned before logical operators like &&, || and there is ternary operator => condition ? (do this if true) : (do this if false) . Loops are letting us  to execute line(s) of code multiple times as we want. Loops examples: for (start,condition,++ or --) { ... }, for (item of iterableItems) { ... }.
 
 ### Map & Filter:
 
-Filter function allows us to manage the array elements which we need and skip the values we don't want. Here Map function allows us to do something on all items in the array. Also Reduce function allows us to combine items in the array together. In JavaScript we have awesome string shape we can use, called  string template or string literal, we use `string ${variable}` to get the string with needed variables.
+Filter function allows us to manage the array elements which we need and skip the values we don't want. Here Map function allows us to do something on all items in the array. Also Reduce function allows us to combine items in the array together. In JavaScript we have awesome string shape we can use, called  string template or string literal, we use \`string ${variable}\` to get the string with needed variables.
 
 ### Doggos Quiz Game:
 

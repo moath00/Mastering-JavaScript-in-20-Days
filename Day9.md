@@ -7,6 +7,7 @@ We need to add some new components:
 - Web Browser APIs/Node background APIs
 - Promises
 - Event loop, Callback/Task queue and micro task queue
+
 What have we in Web Browser in addition to JavaScript?
 - Dev tools
 - Console (in JavaScript equivalent to console)
@@ -22,9 +23,11 @@ This image shows how the JavaScript work with execution context, callbacks and e
 ![Callback Queue & Event Loop](./visualData/callbackQueueAndEventLoop.png)
 
 ES5 Web Browser APIs with callback functions:
+
 Problems:
 - Our response data is only available in the callback function (callback hell).
 - Maybe it feels a little odd to think of passing a function into another function only for it to run much later.
+
 Benefits:
 - Super explicit once you understand how it works under-the-hood.
 
@@ -33,17 +36,40 @@ Using two-pronged ‘facade’ functions that both:
 - Initiate background web browser work
 - Return a placeholder object (promise) immediately in JavaScript.
 
-We have two things in Promise Objects, first is value key with response data as its value, second is  "on fulfilled" key with hidden data (like function to execute after response) as its value, one more hidden is "on rejected" used in catch(), the and the promise object itself have .then() method used when been fulfilled and stored in fulfilled hidden value (functions or lines of code), .catch() method used when been rejected and finally() method used when finish the promise. The promise object value is passed automatically to the fulfilled function(s) when it is updated.
+Promises in JavaScript can be thought of as objects that represent the eventual completion (or failure) of an asynchronous operation. They have several key components:
+
+1. Value Key: This is where the resolved result or data from the asynchronous operation is stored. When the promise successfully resolves, the value key holds the result.
+
+2. "onFulfilled" Key: This represents a hidden part of the promise, usually in the form of a function or a set of instructions. It's the code that gets executed when the promise successfully fulfills or resolves. This part handles what should happen with the resolved value.
+
+3. "onRejected" Key: Similarly, this is another hidden part of the promise that deals with error handling. It contains instructions for what to do if the promise is rejected or encounters an error. You typically interact with this part through the .catch() method.
+
+4. Promise Object Itself: This is the main object representing the asynchronous task. It has methods like .then(), .catch(), and .finally() that allow you to attach functions to be executed when the promise completes, encounters an error, or finishes, respectively.
+
+5. Automatic Passing of Values: When the promise resolves successfully, the resolved value is automatically passed to the functions specified in .then(). This makes it easy to work with the result of the asynchronous operation.
+
+Overall, Promises provide a structured way to work with asynchronous code, making it more readable and manageable by separating the handling of success and error cases and allowing you to chain multiple asynchronous operations together.
+
 ![Event Loop With ES6 Promise](./visualData/eventLoopWithES6Promises.png)
 
 > Link passed to fetch('Link') have two parts, the domain(serves name to access) and the path(data location in the domain).
 
 ![Callback Queue & Microtask Queue](./visualData/callbackQueueAndMicrotaskQueue.png)
 
-Promises, Problems
+The Event Loop consists of: (priority: Heigh 1,2 ... 5 Low)
+1. Global()
+2. CallStack() : execution context
+3. EventLoop() (3)
+4. MicrotaskQueue() (4)
+5. CallBackQueue() (5)
+
+Callback Queue gets the ordinary callback functions coming from the setTimeout() API after the timer expires. Microtask Queue gets the callback functions coming through Promises and Mutation Observer. Callback Queue has lesser priority than Microtask Queue of fetching the callback functions to Event Loop.
+
+Promises, Problems:
 - 99% of developers have no idea how they’re working under the hood.
 - Debugging becomes super-hard as a result.
 - Developers fail technical interviews.
+
 Benefits:
 - Cleaner readable style with pseudo-synchronous style code.
 - Nice error handling process.

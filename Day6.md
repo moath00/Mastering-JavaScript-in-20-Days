@@ -3,21 +3,22 @@
 
 ### Data Fetching & Promises:
 
-API: Application Programming Interfaces.APIs provide URLs that point at data we care about. API have multiple endpoints and the link I have is one of those endpoints. To use API with fetch function. Fetch is API method to reach data from the server, it returns a promise response and promise means that this is something that takes time to execute(takes time to fetch data from network). Promises can be in 3 possible states:
+API: Application Programming Interfaces. APIs provide URLs that point at data we care about. API have multiple endpoints and the link I have is one of those endpoints. Use API with fetch function. Fetch is API method to reach data from the server, it returns a promise response and promise means that this is something that takes time to execute(takes time to fetch data from network). Promises can be in 3 possible states:
 - pending: still waiting for data to be fetched.
 - fulfilled: resolved the fetching request and all done.
 - rejected: rejected the fetching request (and all done).
+
 We use await with Promise to wait for data to be fetched before running the rest of the code, this will return the response as object, we can use .json function to return the response as JSON object and more readable format and we must use it with await too but we must use it with async functions. With promise we can use then(callbackFun) function to wait for data to be fetched then execute some code on it before running the rest of the code.
 
 > Nice service for http status (GIFs): https://http.cat :)
 
 ### Destructuring Data:
 
-Destructuring is a fancy way of declaring multiple variables at once by "extracting" values from an object with their property names and we can take only the property(s) we want, here the order is not important, anyway JavaScript will match the properties if object contains, but if not; it will take the properties by order, in the same time we can ignore any value we don't want. We can use ... to store rest of data (properties).
+Destructuring is a fancy way of declaring multiple variables at once by "extracting" values from an object with their property names and we can take only the property(s) we want, here the order is not important, anyway JavaScript will match the properties if object contains, but if not; it will take the properties by order matched with the versus values, at the same time we can ignore any value we don't want. We can use ... to store rest of data (properties).
 
 ### Async:
 
-The async function declaration creates a binding of a new async function to a given name. For example, we must use json function with await too but we must use await with async functions.
+The async function declaration establishes a linkage between a new async function and a specified function name. For instance, when working with the json function, we should employ the await keyword. On the other hand, when dealing with async functions, we need to apply the await keyword to ensure proper execution.
 
 ### Modules:
 

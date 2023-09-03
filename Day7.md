@@ -3,7 +3,7 @@
 
 ### Introduction:
 
-JavaScript the Hard Parts will cover: JavaScript principles, Callbacks & Higher Order functions, Closure, Classes/Prototypes & Asynchronicity.
+JavaScript the Hard Parts will cover: JavaScript principles, Callbacks & Higher Order functions, Closure, Classes/Prototypes & Asynchronous.
 What to focus on in the workshop:
 - Analytical problem solving
 - Technical communication
@@ -25,11 +25,13 @@ So, we can store variables and functions in Memory, so we can easily access them
 
 ### Functions and Callbacks:
 
-**DRY :  Don't Repeat Yourself**, so we can generalize the function to make it more reusable. We add parameters to the function and provide the arguments, higher order functions not only generalized with parameters, but also with function parameters. In higher order functions, we may not want to decide exactly what some of our functionality is until we run our function. Here we use call stack while we executing code. In JavaScript, functions are what's called first class objects, they have all the feature of the objects have. The outer function that takes in a function is our higher-order function. Takes in a function or passes out a function (any function that does it we call that). The function we insert is our callback function. Callbacks and Higher Order Functions simplify our code and keep it DRY.
+**DRY :  Don't Repeat Yourself**, so we can generalize the function to make it more reusable. We add parameters to the function and provide the arguments, higher order functions not only generalized with parameters, but also with function parameters. In higher order functions[^1], we may not want to decide exactly what some of our functionality is until we run our function. Here we use call stack while we executing code. In JavaScript, functions are what's called first class objects, they have all the feature that the objects have. The outer function that takes in a function, is higher-order function. Takes in a function or passes out a function (any function that do that we call HOF). The function we insert is our callback function. Callbacks and Higher Order Functions simplify our code and keep it DRY.
 - Declarative readable code: Map, filter, reduce - the most readable way to write code to work with data.
 - Codesmith & pro interview prep: One of the most popular topics to test in interview both for Codesmith and mid/senior level job interviews.
 - Asynchronous JavaScript: Callbacks are a core aspect of async JavaScript, and are under-the-hood of promises, async/await.
 We can write the functions in new form provided in ES6 called arrow function: **const fun = (input) => { // code and return value };**. This can reduce if we have only parameter and if we have only return statement, **const fun = input => returnedValueWithoutReturnKeyword;** and will call anonymous function. Anonymous and arrow functions improve immediate legibility of the code.
+
+[^1]: "higher-order function" is a function that accepts functions as parameters and/or returns a function.
 
 ## Checkpoint Summary :vertical_traffic_light:
 

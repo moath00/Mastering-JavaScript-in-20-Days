@@ -5,18 +5,18 @@
 
 This README file summarizes the JavaScript data types lessons. This section of the sprint view the various types of data used in JavaScript and what values accepted such as strings, integers, arrays ...etc. JavaScript has primitives and objects. Then here is the deferent between undefined and null, undefined means nothing but mistake happened (like I want something and it's not exist) and null means nothing but I want it to be nothing (like I want something and it's exist nothing).
 
-Let's talk about string, first it's a group of character, then it's represented by 0 indexed representation. I can interact with string with square practice [] and other functions like indexOf() [^1], includes() [^2], toLowerCase() and more functions.
+Let's talk about string, first it's a group of characters, then it's represented by 0 indexed representation. I can interact with string with square practice [] and other functions like indexOf() [^1], includes() [^2], toLowerCase() and more functions.
 
 [^1]: indexOf() returns the index of the first character found in the string and its case-sensitive and return -1 if not found the character or substrings.
 [^2]: includes() returns boolean true if the substring exists in the string and its case-sensitive.
 
 ### Operators :
 
-("+" for contaminate and typeof: considered operator)
-mathematical operators : { +, -, *, / } with order of () then { * and / } then { + and  - }, { ++, -- } are increment and decrement operators.
-comparison operators : { >, <, >=, <= } they are widely used in condition statements.
-equals operators : { ==, !=, ===, !== }, double equality is for comparing the values and triple comparing values and types.
-logical operators : { ||, &&, ??, ^, |, &, <<, >>> } operators that make binary operations.
+("+" for concatenation and typeof: considered operator)
+- Mathematical operators : { +, -, *, / } with order of () then { * and / } then { + and  - }, { ++, -- } are increment and decrement operators.
+- Comparison operators : { >, <, >=, <= } they are widely used in condition statements.
+- Equals operators : { ==, !=, ===, !== }, double equality is for comparing the values and triple comparing values and types.
+- Logical operators : { ||, &&, ??, ^, |, &, <<, >>> } operators that make binary operations.
 
 ### Expressions :
 

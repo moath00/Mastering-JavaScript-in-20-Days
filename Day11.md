@@ -19,7 +19,7 @@ In JavaScript, variables does not have types, values do. We use operator typeof 
 
 The "NaN" is not means "Not a Number", it means the value is not correct not represent a number (or there is not a number to represent this thing). Operation on number, try to convert the part of the operation to a number, if can will do it, unless will return NaN. NaN is the only value not equal to itself (NaN !== NaN), the type of the value NaN is a number. In ES6, JavaScript had Number.isNaN(value) function to used in better way than isNaN() general function (it's just invalid number).
 
-Negative Zero, it is exist in JavaScript numbers :). It's work with comparison wrongly and when stringify -0, so we use Object.is(variable, -0) to check if -0 equal to 0 or not. The Math.sign(value) returns -1 if sign is negative and 1 if sign is positive, but in 0 case return 0 if only zero but if -0 will return -0 (Whaaat!!).
+Negative Zero, it is exist in JavaScript numbers :). It's work with comparison wrongly and when stringify -0, so we use Object.is(variable, -0) to check if -0 equal to 0 or not. The Math.sign(value) returns -1 if sign is negative and 1 if sign is positive, but in 0 case return 0 if only zero but if -0 will return -0 (Whaaat!!) else returns NaN.
 
 ![Negative Zero](./visualData/negativeZero.png)
 
@@ -35,7 +35,7 @@ and 3 > 2 > 1 => false => (3 > 2) > 1 => (true) > 1 => 1 > 1 => false
 
 Type Coercion refers to the process of automatic or implicit conversion of values from one data type to another. This includes conversion from Number to String, String to Number, Boolean to Number etc. when different types of operators are applied to the values.
 
-We have `String Literals with ${ Variable }` to add variables, String literals make concatenation under the hood. Sometimes we need to know how variables are converted to handle the wrong values. We can convert the numbers using unary operator like +, -, ... etc. The falsy value of "" will be converted to 0 because the length of the string is 0, the truthy value of "string words" will be converted to true because the length of the string is not zero.
+We have \`String Literals with ${ Variable }\` to add variables, String literals make concatenation under the hood. Sometimes we need to know how variables are converted to handle the wrong values. We can convert the numbers using unary operator like +, -, ... etc. The falsy value of "" will be converted to 0 because the length of the string is 0, the truthy value of "string words" will be converted to true because the length of the string is not zero.
 
 Boxing, it is a form of implicit coercion. This is what happened when I try to access a property like length in primitive value, so JavaScript convert it to object for me. Conversion equivalent to Coercion.
 

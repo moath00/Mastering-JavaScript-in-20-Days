@@ -9,7 +9,7 @@ Closure is the most esoteric of JavaScript concepts, enables powerful pro-level 
 
 ![Execution Context with Call Stack](./visualData/executionContextAndCallStack.png)
 
-When I return a function as a result of another function, it will have a backpack that memories all the local memory surrounds from its global function (or its outer function), if we have a variables we don't use in the function so this will cause a memory leak. The backpack data is secure private and no one can access it because it's hidden ( [[scope]] ), so this function can remember previous value running and interact depending on it (like allow to run the function only one time). The backpack called C.O.V.E. (Closed Over Variables Environment code), and called P.L.S.R.D. (Persistent Lexical StaticScope Reference Data) or Closure too. But in reality the backpack is a result of C.O.V.E , P.L.S.R.D. and Closure in JavaScript.
+When I return a function as a result of another function, it will have a backpack that memories all the local memory surrounds from its global function (or its outer function), if we have a variables we don't use in the function so this will cause a memory leak. The backpack data is secure private and no one can access it because it's hidden ( [[scope]] ), so this function can remember previous value running and interact depending on it (like allow to run the function only one time). **The backpack called C.O.V.E. (Closed Over Variables Environment code)**, and called P.L.S.R.D. (Persistent Lexical StaticScope Reference Data) or Closure too. But in reality the backpack is a result of C.O.V.E , P.L.S.R.D. and Closure in JavaScript.
 
 - Hint : What are Decorators in JavaScript? The word decorator means combining a set of code or program with another or can be said as wrapping a function with another function to extends the functionality or working of the function. Decorator can also be called as decorator function.
 - Scope: It's the rules for any line of code that announce what data do I have available to me in it.
@@ -26,7 +26,7 @@ Closure gives our functions persistent memories and entirely new toolkit for wri
 
 ### Asynchronous JavaScript:
 
-JavaScript is asynchronous language, it executes code line by line, doesn't execute next line before finishing the current line. I javascript we have setTimeout(function, timeInMilliseconds) used to execute function or code after delay in synchronous way. Our core JavaScript engine has 3 main parts:
+JavaScript is asynchronous language, it executes code line by line, doesn't execute next line before finishing the current line. In JavaScript we have setTimeout(function, timeInMilliseconds) used to execute function or code after delay in synchronous way. Our core JavaScript engine has 3 main parts:
 - Thread of execution
 - Memory/variable environment
 - Call stack
